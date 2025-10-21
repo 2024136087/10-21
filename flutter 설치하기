@@ -1,0 +1,25 @@
+flutter 설치하기
+
+개인 방화벽 끄기
+
+# Flutter SDK 설치 자동화 스크립트
+$flutterPath = "$env:USERPROFILE\flutter"
+git clone https://github.com/flutter/flutter.git -b stable $flutterPath
+
+# 환경 변수에 flutter/bin 추가
+setx PATH "$env:PATH;$flutterPath\bin"
+
+# 설치 확인(새로운 터미널로 열어서 확인해야 함)
+flutter doctor
+
+cd project_c
+flutter create second_app
+cd second_app
+
+flutter run
+2
+
+이후 second_app 까지 들어가서 code . ( vscode 들어가기
+
+
+실행앱 chrome 으로 변경 후 실행
